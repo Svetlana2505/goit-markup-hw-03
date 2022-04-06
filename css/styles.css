@@ -1,0 +1,269 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --color-white: #fff;
+  --background-color: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--color-white);
+  letter-spacing: 0.03em;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 ;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* шапка */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-bottom: 94px;
+}
+
+.header,
+.filter,
+.filter-list,
+.project-list {
+  outline: 2px solid red;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.logo-item {
+  color: var(--accent-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-menu .header-link.current {
+  color: var(--accent-color);
+}
+
+.header-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
+  color: var(--accent-color);
+}
+
+/* Страница 1 */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--background-color);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
+}
+
+.working,
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+
+/* портфолио */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: none;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.filter-list {
+  margin-bottom: 34px;
+}
+
+/* project */
+
+.project-item {
+  width: 370px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.project-text,
+.project-subtext {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--title-text-color);
+}
+
+.project-subitem {
+  padding: 20px 24px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.project-subtext {
+  display: none;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.92;
+  color: var(--color-white);
+  padding-bottom: 20px;
+}
+
+.footer-list {
+  font-style: normal;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-item:last-child{
+  margin-bottom: 0;
+}
+
+.footer-address {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-white);
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
